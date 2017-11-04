@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.anjaleegamage.employeeassistancesystem.VehicleRequests">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimaryDark"
+        android:text=" Vehicle Request"
+        />
+
+    <TextView
+        android:text="Place:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:id="@+id/place"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonRequest"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/purpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Purpose:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/editPlace"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No.of Participants:"
+        android:id="@+id/no_of_participants"
+        android:textSize="18dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/editPurpose"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/textview1"
+        android:text="Date"
+        android:layout_below="@+id/btn1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview2"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/textview1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editPurpose"
+        android:hint="Enter Purpose"
+        android:layout_alignBaseline="@+id/purpose"
+        android:layout_alignBottom="@+id/purpose"
+        android:layout_alignLeft="@+id/editPlace"
+        android:layout_alignStart="@+id/editPlace" />
+
+    <EditText
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editPlace"
+        android:hint="Enter a Place to Visit"
+        android:layout_alignBaseline="@+id/place"
+        android:layout_alignBottom="@+id/place"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editParticipants"
+        android:hint="Enter no.of partcipants"
+        android:layout_below="@+id/no_of_participants"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Pick Time"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:id="@+id/btn2"
+        android:onClick="showTimePickerDialog"
+        android:layout_alignBottom="@+id/btn1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Pick Date"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:id="@+id/btn1"
+        android:onClick="showDatePickerDialog"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/editParticipants"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
+

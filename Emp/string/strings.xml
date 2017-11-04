@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">EmployeeAssistanceSystem</string>
+
+    <string name="title_activity_vehicle_requests">VehicleRequests</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="Hall">
+        <item></item>
+        <item>D_1</item>
+        <item>D_2</item>
+        <item>D_3</item>
+        <item>D_4</item>
+    </string-array>
+    <string-array name="Department">
+        <item></item>
+        <item>IT</item>
+        <item>HR</item>
+        <item>Salary</item>
+        <item>Finance</item>
+    </string-array>
+</resources>
